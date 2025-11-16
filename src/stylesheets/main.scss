@@ -1,3 +1,269 @@
-/* Your styles go here */
+
+
+
+
+
+$primary: #EAEAEA;
+$secondary: #414FF0;
+$accent: #c4c4c4;
+$dark: #252F37;
+$light: #FFFFFF;
+
+
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $primary;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+
+.spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+
+// nav
+
+
+// hero
+
+.hero {
+    height: 500px;
+}
+
+// features
+
+.features {
+    text-align: center;
+    background-color: #C7C7C7;
+    padding: 5rem;
+}
+
+.icon-large {
+    font-size: 10rem;
+}
+
+// about 
+
+#about {
+
+    h5 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    a {
+        margin-left: 2rem;
+    }
+}
+
+.learn-btn {
+    background-color: $secondary;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+
+}
+
+#about {
+    background-color: $light; 
+  
+    .about-photo {
+      max-width: 340px;   
+      margin-left: auto; 
+      margin-right: auto;
+  
+      img { display: block; width: 100%; height: auto; }
+    }
+  
+    p { line-height: 1.7; max-width: 60ch; }
+  }
+  
+
+
+
+
+// skills
+
+#skills {
+    background-color: $light;
+    padding: 4rem 0;
+  
+    .skill-icon {
+      width: 40px;
+      height: auto;
+    }
+  
+    .progress {
+      height: 1rem;
+      background-color: lighten($dark, 30%);
+      border-radius: 50px;
+      overflow: hidden;
+    }
+  
+    .progress-bar {
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: $light;
+      text-align: right;
+      padding-right: 0.5rem;
+      transition: width 1s ease;
+    }
+  }
+  
+// works
+
+#works {
+
+    .tr {
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    h5 {
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .learn-btn {
+        margin-left: 3rem;
+    }
+
+}
+
+.spacer {
+    margin-bottom: 5rem;
+}
+
+.travelly {
+    height: 200px;
+}
+
+.home-card {
+    width: 100%;
+    max-width: 300px; 
+    height: 380px; 
+    margin: 0 auto; 
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: $accent;
+    color: $dark;
+    border: none;
+
+    .card-img-top {
+        width: 100%;
+        height: 200px;       
+        object-fit: cover;    
+        object-position: center; 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+}
+
+.card-btn {
+    background-color: $dark;
+    color: #FFFFFF;
+    margin: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+
+}
+
+// quote
+
+#quote {
+    background-color: $secondary;
+    padding: 5rem 1rem;
+  
+    blockquote {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    p {
+      line-height: 1.5;
+    }
+  
+    .blockquote-footer {
+      font-size: 0.9rem;
+      color: rgba($light, 0.85);
+    }
+    
+  }
+
+// cta
+
+  .cta-btn {
+    background-color: $secondary;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+
+}
+
+// contact 
+
+#contact {
+    background-color: $primary;
+  
+    .form-control {
+      border-radius: .5rem;
+      border-color: lighten($dark, 30%);
+      &:focus {
+        border-color: $secondary;
+        box-shadow: 0 0 0 .25rem rgba($secondary, .25);
+      }
+    }
+  
+    .btn.btn-secondary {
+      background-color: $secondary; border: none;
+      &:hover { background-color: darken($secondary, 8%); }
+    }
+  }
+
+
+// line height
+
+.line-height {
+    line-height: 1.7;
+}
+
+
+// images
+
+.case-img-wrap {
+    height: 280px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
